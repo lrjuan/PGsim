@@ -569,13 +569,13 @@ sub XYM_trans {
 
 sub XYM_trans_rev {
 	$chr=shift;
-	if ($chr==23 || $chr eq 'X'){
+	if ($chr eq 'X' || $chr eq '23'){
 		return 'chrX';
 	}
-	elsif ($chr==24 || $chr eq 'Y'){
+	elsif ($chr eq 'Y' || $chr eq '24'){
 		return 'chrY';
 	}
-	elsif ($chr==25 || $chr eq 'MT' || $chr eq 'M'){
+	elsif ($chr eq 'MT' || $chr eq 'M' || $chr eq '25'){
 		return 'chrM';
 	}
 	elsif ($chr==-1){

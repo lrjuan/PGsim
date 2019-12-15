@@ -1,8 +1,8 @@
 #!/usr/bin/perl -w
 
-if(@ARGV<2){
-	print STDERR "\nUsage:\nperl PG_generator.pl Reference_genome Personal_genome_vcf\n";
-}
+if(@ARGV<2 || $ARGV[0] eq '--help' || $ARGV[0] eq '-h'){
+	print STDERR "Usage: perl PG_generator.pl Reference_genome Personal_genome_vcf\n";
+}else{
 
 print STDERR "Loading reference...\n";
 
@@ -160,3 +160,5 @@ close(FAOUT1);
 close(FAOUT2);
 close(MAP1);
 close(MAP2);
+
+}__END__

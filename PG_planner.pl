@@ -1,9 +1,9 @@
 #!/usr/bin/perl -w
 use List::Util qw(sum);
 
-if(@ARGV<2){
-	print STDERR "\nUsage:perl PG_simulator.pl user_configuration_file Personal_Genome_ID\n";
-}
+if(@ARGV<2 || $ARGV[0] eq '--help' || $ARGV[0] eq '-h'){
+	print STDERR "Usage: perl PG_simulator.pl user_configuration_file Personal_Genome_ID\n";
+}else{
 
 #Initializing parameters
 $Gender="Any";
@@ -510,4 +510,4 @@ sub XYM_trans {
 	}
 }
 
-__END__
+}__END__

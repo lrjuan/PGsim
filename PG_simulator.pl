@@ -2,9 +2,9 @@
 
 use List::Util qw(sum);
 
-if(@ARGV<1){
-	print STDERR "\nUsage:perl PG_simulator.pl Personal_genome_ID (consistent with PG_planner)\n";
-}
+if(@ARGV<1 || $ARGV[0] eq '--help' || $ARGV[0] eq '-h'){
+	print STDERR "Usage: perl PG_simulator.pl Personal_genome_ID (consistent with PG_planner)\n";
+}else{
 #Initializing Parameter
 $OVR = 0;
 $KVR = 0;
@@ -589,4 +589,4 @@ sub XYM_trans_rev {
 	}
 }
 
-__END__
+}__END__

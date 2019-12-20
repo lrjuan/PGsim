@@ -53,4 +53,4 @@ The result files are: Personal_genome_ID1.fasta, Personal_genome_ID2.fasta, Pers
 
 Please do not hesitate to address comments/questions/suggestions regarding this tool to: pgbrowser@gmail.com.
 
-L.J. Dec. 9, 2019
+L.J. Dec. 20, 2019
